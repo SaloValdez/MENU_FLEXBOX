@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.contenedor{
+  background-color: teal;
+
+  width: 80%;
+  margin: 0px auto;
+  height:  600px;
+  padding: 5px
+}
+.sub_contenedor{
+  display: flex;
+}
+.contenedor_menu{
+  justify-content: space-between; /*los distribuje uno a la izquierda y otro a la derecha*/
+  background: wheat;
+  padding-top: 5px;
+  padding-left: 5px;
+  
+  display: flex;
+
+}
+.sub_contenedor{
+
+}
+.sub_contenedor img{
+
+}
+.sub_contenedor h2{
+  line-height: 50px; /*la altura del logo*/
+  padding-left:10px;
+  font-family: monofuente;
+  font-size: 2em;
+
+}
+.sub_contenedor_menu{
+  background: wheat;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  line-height: 2.5em; /*centra el texto verticalmente*/
+}
+
+.sub_hijo{
+  background: yellow;
+  flex:auto;
+  border-right: 1px solid black;
+  text-align: center;
+}
+.sub_hijo:last-child{
+  border-right: none;
+}
+.contenedor .contenedor_menu .sub_contenedor_menu .sub_hijo a{
+  text-decoration: none;
+  background-color: yellowgreen;
+  display: block;
+}
+.contenedor .contenedor_menu .sub_contenedor_menu .sub_hijo a:hover{
+  background-color: aqua
+}
